@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFA990"
+    android:padding="16dp"
+    tools:context=".Fruits">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fruits"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Lista de frutas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:divider="?android:attr/dividerVertical"
+            android:showDividers="middle"
+            android:dividerPadding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgFresa"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fresa"
+                    android:contentDescription="@string/strawberry" />
+
+                <TextView
+                    android:id="@+id/textFresa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strawberry"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginTop="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnSoundApple"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/play"
+                    android:contentDescription="@string/audio"
+                    android:onClick="sonarFresa"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgCerezas"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cerezas"
+                    android:contentDescription="@string/cherries" />
+
+                <TextView
+                    android:id="@+id/textCerezas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cherries"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginTop="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnSoundCerezas"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/play"
+                    android:contentDescription="@string/audio"
+                    android:onClick="sonarCereza"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgMango"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/mango"
+                    android:contentDescription="@string/mango" />
+
+                <TextView
+                    android:id="@+id/textMango"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mango"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginTop="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnSoundMango"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/play"
+                    android:contentDescription="@string/audio"
+                    android:onClick="sonarMango"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgNaranja"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/naranja"
+                    android:contentDescription="@string/orange" />
+
+                <TextView
+                    android:id="@+id/textNaranja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orange"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginTop="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnSoundNaranja"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/play"
+                    android:contentDescription="@string/audio"
+                    android:onClick="sonarNaranja"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgSandia"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/sandia"
+                    android:contentDescription="@string/watermelon" />
+
+                <TextView
+                    android:id="@+id/textSandia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watermelon"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginTop="8dp" />
+
+                <ImageButton
+                    android:id="@+id/btnSoundSandia"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/play"
+                    android:contentDescription="@string/audio"
+                    android:onClick="sonarSandia"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

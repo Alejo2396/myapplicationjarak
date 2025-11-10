@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".Animales">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animals"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ejemplo de Animal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgCanguro"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/canguro"
+                android:contentDescription="@string/canguro"
+                android:onClick="sonarKanguro"/>
+
+            <TextView
+                android:id="@+id/textCanguro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kanguro"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgKoala"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/koala"
+                android:contentDescription="@string/koala"
+                android:onClick="sonarKoala"/>
+
+            <TextView
+                android:id="@+id/textKoala"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/koala"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgMono"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/mono"
+                android:contentDescription="@string/mono"
+                android:onClick="sonarMono"/>
+
+            <TextView
+                android:id="@+id/textMono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mono"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgPanda"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/panda"
+                android:contentDescription="@string/panda"
+                android:onClick="sonarPanda"/>
+
+            <TextView
+                android:id="@+id/textPanda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panda"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgSerpiente"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/serpiente"
+                android:contentDescription="@string/serpiente"
+                android:onClick="sonarSerpiente"/>
+
+            <TextView
+                android:id="@+id/textSerpiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serpiente"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgGato"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/gato"
+                android:contentDescription="@string/Cat"
+                android:onClick="sonarGato"/>
+
+            <TextView
+                android:id="@+id/textGato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cat"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgLeon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/leon"
+                android:contentDescription="@string/Lion"
+                android:onClick="sonarLeon"/>
+
+            <TextView
+                android:id="@+id/textLeon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Lion"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgElefante"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/elefante"
+                android:contentDescription="@string/Elephant"
+                android:onClick="sonarElefante"/>
+
+            <TextView
+                android:id="@+id/textElefante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Elephant"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/imgPajaro"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pajaro"
+                android:contentDescription="@string/Bird"
+                android:onClick="sonarPajaro"/>
+
+            <TextView
+                android:id="@+id/textPajaro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Bird"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
