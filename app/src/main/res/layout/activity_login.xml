@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvEncabezado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_registrar"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/ingrese_nombre"
+        app:layout_constraintTop_toBottomOf="@id/tvEncabezado"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/ingrese_apellido"
+        app:layout_constraintTop_toBottomOf="@id/etNombre"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etEdad"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/ingrese_edad"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/etApellido"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etApodo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/ingrese_apoyo"
+        app:layout_constraintTop_toBottomOf="@id/etEdad"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/ingrese_correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/etApodo"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Spinner
+        android:id="@+id/spColegios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:prompt="@string/seleccione_colegio"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/rgGenero"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/spColegios"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent">
+        <RadioButton
+            android:id="@+id/rbF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"/>
+        <RadioButton
+            android:id="@+id/rbM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver series"
+        app:layout_constraintTop_toBottomOf="@id/rgGenero"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <CheckBox
+        android:id="@+id/cbDormir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dormir"
+        app:layout_constraintTop_toBottomOf="@id/cbSeries"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <CheckBox
+        android:id="@+id/cbEscribir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribir"
+        app:layout_constraintTop_toBottomOf="@id/cbDormir"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <CheckBox
+        android:id="@+id/cbLeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leer"
+        app:layout_constraintTop_toBottomOf="@id/cbEscribir"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_registrar"
+        app:layout_constraintTop_toBottomOf="@id/cbLeer"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

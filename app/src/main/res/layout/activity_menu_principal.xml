@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    android:padding="24dp">
+
+<TextView
+        android:text="Selecciona una opción"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#6A1B9A"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnAprender"
+        android:text="Aprender"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnJugar"
+        android:text="Jugar"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>

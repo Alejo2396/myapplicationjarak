@@ -1,0 +1,79 @@
+<resources>
+    <string name="title">¡Bienvenido!</string>
+    <string name="btn_iniciar">¡Empezar!</string>
+    <string name="app_name">App divertida</string>
+    <string name="tv_registrar">Registrar Usuario</string>
+    <string name="btn_registrar">Registrar</string> <!-- solo una vez -->
+    <string name="seleccione_colegio">Seleccione su colegio</string>
+    <string name="canguro">Canguro</string>
+    <string name="aprendiendo">¡Aprendamos inglés!</string>
+    <string name="animales">Animals</string>
+    <string name="colores">Colors</string>
+    <string name="numeros">Numbers</string>
+    <string name="frutas">Fruits</string>
+    <string name="escuchando">Escuchando</string>
+    <string name="koala">Koala</string>
+    <string name="mono">Monkey</string>
+    <string name="serpiente">Snake</string>
+    <string name="panda">Panda</string>
+    <string name="kanguro">Kangaroo</string>
+    <string name="orange">Orange</string>
+    <string name="cherries">Cherries</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="mango">Mango</string>
+    <string name="zero">Zero</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="seven">Seven</string>
+    <string name="eight">Eight</string>
+    <string name="nine">Nine</string>
+    <string name="audio">Audio</string>
+    <string name="numbers">Numbers</string>
+    <string name="animals">Animals</string>
+    <string name="fruits">Fruits</string>
+    <string name="colors">Colors</string>
+    <string name="Gato">Gato</string>
+    <string name="Cat">Cat</string>
+    <string name="Lion">Lion</string>
+    <string name="Leon">Leon</string>
+    <string name="Elefante">Elefante</string>
+    <string name="Elephant">Elephant</string>
+    <string name="Bird">Bird</string>
+    <string name="Pajaro">Pajaro</string>
+    <string name="Dog">Dog</string>
+    <string name="Perro">Perro</string>
+    <string name="Cow">Cow</string>
+    <string name="Vaca">Vaca</string>
+    <string name="Apple">Apple</string>
+    <string name="Manzana">Manzana</string>
+    <string name="Banana">Banana</string>
+    <string name="Banano">Banano</string>
+    <string name="name">DATOS</string>
+    <string name="ingrese_nombre">ingrese el nombre</string>
+    <string name="ingrese_apellido">ingrese el apellido</string>
+    <string name="ingrese_edad">ingrese la edad</string>
+    <string name="ingrese_apoyo">ingrese el apodo</string>
+    <string name="ingrese_correo">ingrese el correo</string>
+
+    <string-array name="Colegios">
+        <item>Seleccione su colegio</item>
+        <item>San Agustin</item>
+        <item>Salesianas</item>
+        <item>San Francisco</item>
+        <item>Jose Eliecer</item>
+        <item>La Milagrosa</item>
+    </string-array>
+
+    <string-array name="equipos">
+        <item>Real Madrid</item>
+        <item>portugal</item>
+        <item>dourmount</item>
+        <item>arsenal</item>
+        <item>atletico madrid</item>
+    </string-array>
+</resources>

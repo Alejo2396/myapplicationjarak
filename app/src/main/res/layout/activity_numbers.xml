@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:padding="16dp"
+    tools:context=".Numbers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numbers"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgCero"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cero"
+                android:contentDescription="@string/zero" />
+
+            <TextView
+                android:id="@+id/textCero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundCero"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarCero"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgUno"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/uno"
+                android:contentDescription="@string/one" />
+
+            <TextView
+                android:id="@+id/textUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundUno"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarUno"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgDos"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dos"
+                android:contentDescription="@string/two" />
+
+            <TextView
+                android:id="@+id/textDos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundDos"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarDos"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgTres"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/tres"
+                android:contentDescription="@string/three" />
+
+            <TextView
+                android:id="@+id/textTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundTres"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarTres"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgCuatro"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cuatro"
+                android:contentDescription="@string/four" />
+
+            <TextView
+                android:id="@+id/textCuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundCuatro"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarCuatro"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgCinco"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cinco"
+                android:contentDescription="@string/five" />
+
+            <TextView
+                android:id="@+id/textCinco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundCinco"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarCinco"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgSeis"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/seis"
+                android:contentDescription="@string/six" />
+
+            <TextView
+                android:id="@+id/textSeis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/six"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundSeis"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarSeis"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgSiete"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/siete"
+                android:contentDescription="@string/seven" />
+
+            <TextView
+                android:id="@+id/textSiete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seven"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundSiete"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarSiete"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgOcho"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ocho"
+                android:contentDescription="@string/eight" />
+
+            <TextView
+                android:id="@+id/textOcho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eight"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundOcho"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarOcho"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgNueve"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/nueve"
+                android:contentDescription="@string/nine" />
+
+            <TextView
+                android:id="@+id/textNueve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nine"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333"
+                android:layout_marginTop="8dp" />
+
+            <ImageButton
+                android:id="@+id/btnSoundNueve"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/play3"
+                android:contentDescription="@string/audio"
+                android:onClick="sonarNueve"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
