@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationJarak">
         <activity
+            android:name=".MostrarDatos"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
             android:name=".login"
             android:exported="true" />
         <activity

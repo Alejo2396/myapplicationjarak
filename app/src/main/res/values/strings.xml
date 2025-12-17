@@ -4,6 +4,11 @@
     <string name="app_name">App divertida</string>
     <string name="tv_registrar">Registrar Usuario</string>
     <string name="btn_registrar">Registrar</string> <!-- solo una vez -->
+    <string name="Registro">Registro</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="Correo">Correo</string>
+    <string name="Siguiente">Siguiente</string>
     <string name="seleccione_colegio">Seleccione su colegio</string>
     <string name="canguro">Canguro</string>
     <string name="aprendiendo">¡Aprendamos inglés!</string>

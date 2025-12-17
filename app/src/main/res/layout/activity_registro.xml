@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Registro"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="25dp" />
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Nombre"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#444444"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edtApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Apellido"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#444444"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Correo"
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#444444"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="22dp" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/Siguiente"
+        android:padding="14dp"
+        android:backgroundTint="#0D47A1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

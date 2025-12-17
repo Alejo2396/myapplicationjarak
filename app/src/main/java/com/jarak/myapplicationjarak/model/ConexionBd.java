@@ -8,6 +8,7 @@ public class ConexionBd extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "mi_base.db";
     private static final int DATABASE_VERSION = 1;
+
     public static final String TABLE_DATOS = "DATOS";
 
     public ConexionBd(Context context) {
@@ -16,18 +17,13 @@ public class ConexionBd extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_TABLE = "CREATE TABLE " + TABLE_DATOS + " (" +
+        String sql = "CREATE TABLE " + TABLE_DATOS + " (" +
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "nombre TEXT," +
                 "apellido TEXT," +
-                "apodo TEXT," +
-                "correo TEXT," +
-                "edad INTEGER," +
-                "colegio TEXT," +
-                "genero TEXT," +
-                "gustos TEXT" +
+                "correo TEXT" +
                 ")";
-        db.execSQL(CREATE_TABLE);
+        db.execSQL(sql);
     }
 
     @Override

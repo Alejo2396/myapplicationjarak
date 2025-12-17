@@ -42,4 +42,13 @@
         android:textColor="@android:color/white"
         android:layout_marginBottom="20dp" />
 
+    <Button
+        android:id="@+id/btnRegistro"
+        android:text="Registro"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9C27B0"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp" />
+
 </LinearLayout>

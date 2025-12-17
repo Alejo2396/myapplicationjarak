@@ -16,6 +16,7 @@ public class MenuPrincipalActivity extends AppCompatActivity {
         Button btnAprender = findViewById(R.id.btnAprender);
         Button btnJugar = findViewById(R.id.btnJugar);
         Button btnLogin = findViewById(R.id.btnLogin);
+        Button btnRegistro = findViewById(R.id.btnRegistro);
 
         btnAprender.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,11 @@ public class MenuPrincipalActivity extends AppCompatActivity {
                 Intent intent = new Intent(MenuPrincipalActivity.this, login.class);
                 startActivity(intent);
             }
+        });
+
+        btnRegistro.setOnClickListener(v -> {
+            Intent intent = new Intent(MenuPrincipalActivity.this, Registro.class);
+            startActivity(intent);
         });
     }
 }
